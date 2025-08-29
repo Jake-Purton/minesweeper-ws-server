@@ -1,0 +1,15 @@
+[package]
+name = "static-ws-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = "0.20"
+tungstenite = "0.21"
+axum = { version = "0.7", features = ["ws"] }
+tower = "0.4"
+futures-util = "0.3.31"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+rand = "0.9.2"
